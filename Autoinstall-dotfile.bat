@@ -1,3 +1,6 @@
+::Instalando os programas
+
+
 :: Criando os links sybolocos
 
 mklink "%USERPROFILE%\komorebi.json" "%~dp0komorebi.json"
