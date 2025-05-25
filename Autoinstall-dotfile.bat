@@ -1,5 +1,7 @@
 ::Instalando os programas
-
+winget install --id=Opera.OperaGX  -e
+winget install --id=LGUG2Z.komorebi  -e
+winget install --id=AmN.yasb  -e
 
 :: Criando os links sybolocos
 
