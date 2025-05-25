@@ -1,0 +1,157 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.30/schema.json",
+  "app_specific_configuration_path": "$Env:USERPROFILE/applications.json",
+  "window_hiding_behaviour": "Cloak",
+  "animation": {
+    "enabled": true,
+    "duration": 250
+  },
+  "transparency": true,
+  "transparency_alpha": 215,
+  "transparency_ignore_rules": [
+  {
+    "kind": "Exe",
+    "id": "opera.exe",
+    "matching_strategy": "Equals"
+  }
+]
+,
+"ignore_rules": [
+  {
+    "kind": "Exe",
+    "id": "Honeygain.exe",
+    "matching_strategy": "Equals"
+  },
+  {
+  "kind": "Exe",
+  "id": "Warudo.exe",
+  "matching_strategy": "Equals"},
+  {"kind": "Exe",
+   "id": "warudo-mediapipe-electron.exe",
+   "matching_strategy": "Equals"
+
+   },
+  {
+    "kind": "Title",
+    "id": "WaitForMeKomorebi",
+    "matching_strategy": "Contains"
+  }
+]
+
+  ,"tray_and_multi_window_applications": [  {
+    "kind": "Exe",
+    "id": "Discord.exe",
+    "matching_strategy": "Equals"
+  },
+  {
+    "kind": "Exe",
+    "id": "Spotify.exe",
+    "matching_strategy": "Equals"
+  },
+  {
+    "kind": "Exe",
+    "id": "obs64.exe",
+    "matching_strategy": "Equals"
+
+  }
+
+
+],
+
+
+
+
+
+  "cross_monitor_move_behaviour": "Insert",
+  "default_workspace_padding": 20,
+  "default_container_padding": 4,
+  "border": true,
+  "border_width": 6,
+  "border_offset": -1,
+  "border_style": "Rounded",
+  "border_colours": {
+    "single": "#00a2ff",
+    "stack": "#5700b9",
+    "monocle": "#745cb8",
+    "unfocused": "#020085"
+  },
+    "stackbar": {
+      "height": 30,
+      "mode": "OnStack",
+      "tabs": {
+        "width": 150,
+        "focused_text": "#1900ff",
+        "unfocused_text": "#3b2394",
+        "background": "#140847"
+      }
+    }
+  
+  ,
+  "monitors": [
+    {
+      "index": 0,
+      "workspaces": [
+        {
+          "name": "I",
+          "layout": "BSP"
+        },
+        {
+          "name": "II",
+          "layout": "VerticalStack"
+        },
+        {
+          "name": "III",
+          "layout": "HorizontalStack"
+        },
+        {
+          "name": "IV",
+          "layout": "UltrawideVerticalStack"
+        },
+        {
+          "name": "V",
+          "layout": "Rows"
+        },
+        {
+          "name": "VI",
+          "layout": "Grid"
+        },
+        {
+          "name": "VII",
+          "layout": "RightMainVerticalStack"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "workspaces": [
+        {
+          "name": "I",
+          "layout": "BSP"
+        },
+        {
+          "name": "II",
+          "layout": "VerticalStack"
+        },
+        {
+          "name": "III",
+          "layout": "HorizontalStack"
+        },
+        {
+          "name": "IV",
+          "layout": "UltrawideVerticalStack"
+        },
+        {
+          "name": "V",
+          "layout": "Rows"
+        },
+        {
+          "name": "VI",
+          "layout": "Grid"
+        },
+        {
+          "name": "VII",
+          "layout": "RightMainVerticalStack"
+        }
+      ]
+    }
+  ]}
