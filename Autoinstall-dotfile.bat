@@ -1,4 +1,4 @@
-::Instalando os programas
+@echo off
 setlocal
 
 :: Função para instalar se o programa não estiver instalado
@@ -7,6 +7,14 @@ call :install_if_missing "komorebi" "LGUG2Z.komorebi"
 call :install_if_missing "JetBrainsMono Nerd Font" "DEVCOM.JetBrainsMonoNerdFont"
 call :install_if_missing "Character Map UWP" "9WZDNCRDXF41"
 call :install_if_missing "yasb" "AmN.yasb"
+
+:: Criando os links simbólicos (somente após instalações)
+echo Criando links simbólicos...
+rmdir /s /q "%userprofile%\.config"
+mklink /d "%USERPROFILE%\.config" "%~dp0.config"
+mklink "%USERPROFILE%\komorebi.json" "%~dp0komorebi.json"
+mklink "%userprofile%\masir.ps1" "%~dp0masir.ps1"
+mklink "%userprofile%\masir.exe" "%~dp0masir.exe"
 
 goto :eof
 
@@ -18,9 +26,4 @@ if errorlevel 1 (
 ) else (
     echo %~1 ja esta instalado. Pulando...
 )
-:: Criando os links sybolocos
-rmdir /s /q "%userprofile%\.config"
-mklink /d "%USERPROFILE%\.config" "%~dp0.config"
-mklink "%USERPROFILE%\komorebi.json" "%~dp0komorebi.json"
-mklink "%userprofile%\masir.ps1" "%~dp0masir.ps1"
-mklink "%userprofile%\masir.exe" "%~dp0masir.exe"
+exit /b
